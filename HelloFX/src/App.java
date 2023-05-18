@@ -1,3 +1,4 @@
+import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
@@ -23,8 +24,9 @@ public class App extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        secne1(primaryStage);
-        secne2(primaryStage);
+        // secne1(primaryStage);
+        // secne2(primaryStage);
+        scene3(primaryStage);
         primaryStage.show();
     }
 
@@ -92,6 +94,18 @@ public class App extends Application {
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         primaryStage.setScene(scene);
+    }
+
+    private void scene3(Stage primaryStage){
+
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("Scene1.fxml"));
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }
