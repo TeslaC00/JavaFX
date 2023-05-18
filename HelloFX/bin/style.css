@@ -4,14 +4,22 @@
 
 #labelUp{
     -fx-font-family: "MV Boli";
+    font-family: "MV Boli";
     -fx-background-color: #111111;
+    background-color: #111111;
 }
+
 #labelDown{
+    background-color: #148748;
     -fx-background-color: #148748;
 }
+
 #labelLeft{
+    background-color: #19bad6;
     -fx-background-color: #19bad6;
 }
+
 #labelRight{
+    background-color: #e11887;
     -fx-background-color: #e11887;
 }
