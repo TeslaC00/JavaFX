@@ -1,0 +1,17 @@
+.button {
+    -fx-text-size: 20;
+}
+
+#labelUp{
+    -fx-font-family: "MV Boli";
+    -fx-background-color: #111111;
+}
+#labelDown{
+    -fx-background-color: #148748;
+}
+#labelLeft{
+    -fx-background-color: #19bad6;
+}
+#labelRight{
+    -fx-background-color: #e11887;
+}

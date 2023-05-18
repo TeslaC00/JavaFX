@@ -90,6 +90,7 @@ public class App extends Application {
 
         Parent root = FXMLLoader.load(getClass().getResource("Scene.fxml"));
         Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         primaryStage.setScene(scene);
     }
 
